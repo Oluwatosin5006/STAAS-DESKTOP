@@ -1,0 +1,54 @@
+C:\Users\chinonso\Source\Repos\STAAS Desktop\STAAS\bin\Debug\STAAS.exe.config
+C:\Users\chinonso\Source\Repos\STAAS Desktop\STAAS\bin\Debug\STAAS.exe
+C:\Users\chinonso\Source\Repos\STAAS Desktop\STAAS\bin\Debug\STAAS.pdb
+C:\Users\chinonso\Source\Repos\STAAS Desktop\STAAS\bin\Debug\EntityFramework.dll
+C:\Users\chinonso\Source\Repos\STAAS Desktop\STAAS\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\chinonso\Source\Repos\STAAS Desktop\STAAS\bin\Debug\MaterialSkin.dll
+C:\Users\chinonso\Source\Repos\STAAS Desktop\STAAS\bin\Debug\EntityFramework.xml
+C:\Users\chinonso\Source\Repos\STAAS Desktop\STAAS\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\chinonso\Source\Repos\STAAS Desktop\STAAS\obj\Debug\STAAS.csproj.AssemblyReference.cache
+C:\Users\chinonso\Source\Repos\STAAS Desktop\STAAS\obj\Debug\STAAS.csproj.SuggestedBindingRedirects.cache
+C:\Users\chinonso\Source\Repos\STAAS Desktop\STAAS\obj\Debug\STAAS.Home.resources
+C:\Users\chinonso\Source\Repos\STAAS Desktop\STAAS\obj\Debug\STAAS.Properties.Resources.resources
+C:\Users\chinonso\Source\Repos\STAAS Desktop\STAAS\obj\Debug\STAAS.csproj.GenerateResource.cache
+C:\Users\chinonso\Source\Repos\STAAS Desktop\STAAS\obj\Debug\STAAS.csproj.CoreCompileInputs.cache
+C:\Users\chinonso\Source\Repos\STAAS Desktop\STAAS\obj\Debug\STAAS.csproj.CopyComplete
+C:\Users\chinonso\Source\Repos\STAAS Desktop\STAAS\obj\Debug\STAAS.exe
+C:\Users\chinonso\Source\Repos\STAAS Desktop\STAAS\obj\Debug\STAAS.pdb
+C:\Users\Jamesfa\source\repos\STAAS Desktop\STAAS\bin\Debug\STAAS.exe.config
+C:\Users\Jamesfa\source\repos\STAAS Desktop\STAAS\bin\Debug\STAAS.exe
+C:\Users\Jamesfa\source\repos\STAAS Desktop\STAAS\bin\Debug\STAAS.pdb
+C:\Users\Jamesfa\source\repos\STAAS Desktop\STAAS\bin\Debug\EntityFramework.dll
+C:\Users\Jamesfa\source\repos\STAAS Desktop\STAAS\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Jamesfa\source\repos\STAAS Desktop\STAAS\bin\Debug\MaterialSkin.dll
+C:\Users\Jamesfa\source\repos\STAAS Desktop\STAAS\bin\Debug\EntityFramework.xml
+C:\Users\Jamesfa\source\repos\STAAS Desktop\STAAS\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Jamesfa\source\repos\STAAS Desktop\STAAS\obj\Debug\STAAS.csproj.AssemblyReference.cache
+C:\Users\Jamesfa\source\repos\STAAS Desktop\STAAS\obj\Debug\STAAS.csproj.SuggestedBindingRedirects.cache
+C:\Users\Jamesfa\source\repos\STAAS Desktop\STAAS\obj\Debug\STAAS.Home.resources
+C:\Users\Jamesfa\source\repos\STAAS Desktop\STAAS\obj\Debug\STAAS.Properties.Resources.resources
+C:\Users\Jamesfa\source\repos\STAAS Desktop\STAAS\obj\Debug\STAAS.csproj.GenerateResource.cache
+C:\Users\Jamesfa\source\repos\STAAS Desktop\STAAS\obj\Debug\STAAS.csproj.CoreCompileInputs.cache
+C:\Users\Jamesfa\source\repos\STAAS Desktop\STAAS\obj\Debug\STAAS.csproj.CopyComplete
+C:\Users\Jamesfa\source\repos\STAAS Desktop\STAAS\obj\Debug\STAAS.exe
+C:\Users\Jamesfa\source\repos\STAAS Desktop\STAAS\obj\Debug\STAAS.pdb
+C:\Users\Jamesfa\source\repos\STAAS Desktop\STAAS\obj\Debug\STAAS.James.NewUserRegister.resources
+C:\Users\Jamesfa\OneDrive - Ha­-Shem Limited\Desktop\Projects\STAAS Desktop\STAAS\bin\Debug\STAAS.exe.config
+C:\Users\Jamesfa\OneDrive - Ha­-Shem Limited\Desktop\Projects\STAAS Desktop\STAAS\bin\Debug\STAAS.exe
+C:\Users\Jamesfa\OneDrive - Ha­-Shem Limited\Desktop\Projects\STAAS Desktop\STAAS\bin\Debug\STAAS.pdb
+C:\Users\Jamesfa\OneDrive - Ha­-Shem Limited\Desktop\Projects\STAAS Desktop\STAAS\bin\Debug\EntityFramework.dll
+C:\Users\Jamesfa\OneDrive - Ha­-Shem Limited\Desktop\Projects\STAAS Desktop\STAAS\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Jamesfa\OneDrive - Ha­-Shem Limited\Desktop\Projects\STAAS Desktop\STAAS\bin\Debug\MaterialSkin.dll
+C:\Users\Jamesfa\OneDrive - Ha­-Shem Limited\Desktop\Projects\STAAS Desktop\STAAS\bin\Debug\EntityFramework.xml
+C:\Users\Jamesfa\OneDrive - Ha­-Shem Limited\Desktop\Projects\STAAS Desktop\STAAS\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Jamesfa\OneDrive - Ha­-Shem Limited\Desktop\Projects\STAAS Desktop\STAAS\obj\Debug\STAAS.csproj.AssemblyReference.cache
+C:\Users\Jamesfa\OneDrive - Ha­-Shem Limited\Desktop\Projects\STAAS Desktop\STAAS\obj\Debug\STAAS.csproj.SuggestedBindingRedirects.cache
+C:\Users\Jamesfa\OneDrive - Ha­-Shem Limited\Desktop\Projects\STAAS Desktop\STAAS\obj\Debug\STAAS.Home.resources
+C:\Users\Jamesfa\OneDrive - Ha­-Shem Limited\Desktop\Projects\STAAS Desktop\STAAS\obj\Debug\STAAS.Properties.Resources.resources
+C:\Users\Jamesfa\OneDrive - Ha­-Shem Limited\Desktop\Projects\STAAS Desktop\STAAS\obj\Debug\STAAS.csproj.GenerateResource.cache
+C:\Users\Jamesfa\OneDrive - Ha­-Shem Limited\Desktop\Projects\STAAS Desktop\STAAS\obj\Debug\STAAS.csproj.CoreCompileInputs.cache
+C:\Users\Jamesfa\OneDrive - Ha­-Shem Limited\Desktop\Projects\STAAS Desktop\STAAS\obj\Debug\STAAS.csproj.CopyComplete
+C:\Users\Jamesfa\OneDrive - Ha­-Shem Limited\Desktop\Projects\STAAS Desktop\STAAS\obj\Debug\STAAS.exe
+C:\Users\Jamesfa\OneDrive - Ha­-Shem Limited\Desktop\Projects\STAAS Desktop\STAAS\obj\Debug\STAAS.pdb
+C:\Users\Jamesfa\OneDrive - Ha­-Shem Limited\Desktop\Projects\STAAS Desktop\STAAS\obj\Debug\STAAS.James.LoginForm.resources
+C:\Users\Jamesfa\OneDrive - Ha­-Shem Limited\Desktop\Projects\STAAS Desktop\STAAS\obj\Debug\STAAS.James.SignupForm.resources

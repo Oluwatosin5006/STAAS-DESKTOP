@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="STAAS_dbModelStoreContainer" CdmEntityContainer="STAAS_dbEntities1">
+    <EntitySetMapping Name="Admin_User">
+      <EntityTypeMapping TypeName="STAAS_dbModel.Admin_User">
+        <MappingFragment StoreEntitySet="Admin_User">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Full_Name" ColumnName="Full Name" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="User_ID" ColumnName="User ID" />
+          <ScalarProperty Name="Role_ID" ColumnName="Role ID" />
+          <ScalarProperty Name="Fingerprint_ID" ColumnName="Fingerprint ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Attendances">
+      <EntityTypeMapping TypeName="STAAS_dbModel.Attendance">
+        <MappingFragment StoreEntitySet="Attendance">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Time_In" ColumnName="Time In" />
+          <ScalarProperty Name="Time_Out" ColumnName="Time Out" />
+          <ScalarProperty Name="User_ID" ColumnName="User ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Client_License">
+      <EntityTypeMapping TypeName="STAAS_dbModel.Client_License">
+        <MappingFragment StoreEntitySet="Client_License">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Company_Unique_ID" ColumnName="Company Unique ID" />
+          <ScalarProperty Name="License_ID" ColumnName="License ID" />
+          <ScalarProperty Name="Host_Device_ID" ColumnName="Host Device ID" />
+          <ScalarProperty Name="User_ID" ColumnName="User ID" />
+          <ScalarProperty Name="Contactless_Key" ColumnName="Contactless Key" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customizations">
+      <EntityTypeMapping TypeName="STAAS_dbModel.Customization">
+        <MappingFragment StoreEntitySet="Customization">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="Company_Unique_ID" ColumnName="Company Unique ID" />
+          <ScalarProperty Name="Website" ColumnName="Website" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Sender_Email" ColumnName="Sender Email" />
+          <ScalarProperty Name="Sender_Email_Password" ColumnName="Sender Email Password" />
+          <ScalarProperty Name="Sender_Name" ColumnName="Sender Name" />
+          <ScalarProperty Name="Company_Contactless_Key" ColumnName="Company Contactless Key" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DB_Configuration">
+      <EntityTypeMapping TypeName="STAAS_dbModel.DB_Configuration">
+        <MappingFragment StoreEntitySet="DB_Configuration">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Server" ColumnName="Server" />
+          <ScalarProperty Name="Port" ColumnName="Port" />
+          <ScalarProperty Name="DB_Name" ColumnName="DB Name" />
+          <ScalarProperty Name="DB_User" ColumnName="DB User" />
+          <ScalarProperty Name="DB_Password" ColumnName="DB Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Departments">
+      <EntityTypeMapping TypeName="STAAS_dbModel.Department">
+        <MappingFragment StoreEntitySet="Department">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Finger_Definition">
+      <EntityTypeMapping TypeName="STAAS_dbModel.Finger_Definition">
+        <MappingFragment StoreEntitySet="Finger_Definition">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Fingerprints">
+      <EntityTypeMapping TypeName="STAAS_dbModel.Fingerprint">
+        <MappingFragment StoreEntitySet="Fingerprint">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="User_ID" ColumnName="User ID" />
+          <ScalarProperty Name="Finger_ID" ColumnName="Finger ID" />
+          <ScalarProperty Name="Picture" ColumnName="Picture" />
+          <ScalarProperty Name="Template" ColumnName="Template" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Holidays">
+      <EntityTypeMapping TypeName="STAAS_dbModel.Holiday">
+        <MappingFragment StoreEntitySet="Holiday">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Start_Day" ColumnName="Start Day" />
+          <ScalarProperty Name="End_Day" ColumnName="End Day" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="License_Definition">
+      <EntityTypeMapping TypeName="STAAS_dbModel.License_Definition">
+        <MappingFragment StoreEntitySet="License_Definition">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="Begin" ColumnName="Begin" />
+          <ScalarProperty Name="End" ColumnName="End" />
+          <ScalarProperty Name="Company_Unique_ID" ColumnName="Company Unique ID" />
+          <ScalarProperty Name="License_Key" ColumnName="License Key" />
+          <ScalarProperty Name="License_Type" ColumnName="License Type" />
+          <ScalarProperty Name="Device_Count" ColumnName="Device Count" />
+          <ScalarProperty Name="User_Count" ColumnName="User Count" />
+          <ScalarProperty Name="Contactless_Key" ColumnName="Contactless Key" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Movements">
+      <EntityTypeMapping TypeName="STAAS_dbModel.Movement">
+        <MappingFragment StoreEntitySet="Movement">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Reason_ID" ColumnName="Reason ID" />
+          <ScalarProperty Name="User_ID" ColumnName="User ID" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="Time_Out" ColumnName="Time Out" />
+          <ScalarProperty Name="Time_In" ColumnName="Time In" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Movement_Reason">
+      <EntityTypeMapping TypeName="STAAS_dbModel.Movement_Reason">
+        <MappingFragment StoreEntitySet="Movement_Reason">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Reason" ColumnName="Reason" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Registers">
+      <EntityTypeMapping TypeName="STAAS_dbModel.Register">
+        <MappingFragment StoreEntitySet="Register">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Full_Name" ColumnName="Full Name" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="STAAS_dbModel.Role">
+        <MappingFragment StoreEntitySet="Role">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Schedules">
+      <EntityTypeMapping TypeName="STAAS_dbModel.Schedule">
+        <MappingFragment StoreEntitySet="Schedule">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Resumption_Time" ColumnName="Resumption Time" />
+          <ScalarProperty Name="Closing_Time" ColumnName="Closing Time" />
+          <ScalarProperty Name="Workdays" ColumnName="Workdays" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="STAAS_dbModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="First_Name" ColumnName="First Name" />
+          <ScalarProperty Name="Middle_Name" ColumnName="Middle Name" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Department_ID" ColumnName="Department ID" />
+          <ScalarProperty Name="Group_ID" ColumnName="Group ID" />
+          <ScalarProperty Name="Role_ID" ColumnName="Role ID" />
+          <ScalarProperty Name="Unique_ID" ColumnName="Unique ID" />
+          <ScalarProperty Name="Contactless_Key" ColumnName="Contactless Key" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="User_group">
+      <EntityTypeMapping TypeName="STAAS_dbModel.User_group">
+        <MappingFragment StoreEntitySet="User_group">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="User_Picture">
+      <EntityTypeMapping TypeName="STAAS_dbModel.User_Picture">
+        <MappingFragment StoreEntitySet="User_Picture">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="User_ID" ColumnName="User ID" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="User_Type">
+      <EntityTypeMapping TypeName="STAAS_dbModel.User_Type">
+        <MappingFragment StoreEntitySet="User_Type">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Voice_Prompt">
+      <EntityTypeMapping TypeName="STAAS_dbModel.Voice_Prompt">
+        <MappingFragment StoreEntitySet="Voice_Prompt">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Prompt_Title" ColumnName="Prompt Title" />
+          <ScalarProperty Name="File_Path" ColumnName="File Path" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

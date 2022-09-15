@@ -1,0 +1,431 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="STAAS_dbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Admin_User">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Full Name" Type="nvarchar" MaxLength="200" />
+    <Property Name="Password" Type="nvarchar" MaxLength="100" />
+    <Property Name="User ID" Type="bigint" />
+    <Property Name="Role ID" Type="bigint" />
+    <Property Name="Fingerprint ID" Type="bigint" />
+  </EntityType>
+  <EntityType Name="Attendance">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Time In" Type="datetime" Nullable="false" />
+    <Property Name="Time Out" Type="datetime" />
+    <Property Name="User ID" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Client_License">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Company Unique ID" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="License ID" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Host Device ID" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="User ID" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Contactless Key" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Customization">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Company" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Company Unique ID" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Website" Type="nvarchar" MaxLength="100" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="100" />
+    <Property Name="Sender Email" Type="nvarchar" MaxLength="100" />
+    <Property Name="Sender Email Password" Type="nvarchar" MaxLength="100" />
+    <Property Name="Sender Name" Type="nvarchar" MaxLength="100" />
+    <Property Name="Company Contactless Key" Type="nvarchar" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="DB_Configuration">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Server" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Port" Type="int" Nullable="false" />
+    <Property Name="DB Name" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="DB User" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="DB Password" Type="nvarchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Department">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Finger_Definition">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Fingerprint">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="User ID" Type="bigint" Nullable="false" />
+    <Property Name="Finger ID" Type="int" Nullable="false" />
+    <Property Name="Picture" Type="varbinary(max)" Nullable="false" />
+    <Property Name="Template" Type="nvarchar" MaxLength="500" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Holiday">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Start Day" Type="datetime" Nullable="false" />
+    <Property Name="End Day" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="License_Definition">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Company" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Begin" Type="datetime" Nullable="false" />
+    <Property Name="End" Type="datetime" Nullable="false" />
+    <Property Name="Company Unique ID" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="License Key" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="License Type" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Device Count" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="User Count" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Contactless Key" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Movement">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Reason ID" Type="bigint" Nullable="false" />
+    <Property Name="User ID" Type="bigint" Nullable="false" />
+    <Property Name="Location" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Time Out" Type="datetime" Nullable="false" />
+    <Property Name="Time In" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Movement_Reason">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Reason" Type="nvarchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Register">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Full Name" Type="nvarchar" MaxLength="150" />
+    <Property Name="Email" Type="nvarchar" MaxLength="150" />
+    <Property Name="Password" Type="nvarchar" MaxLength="200" />
+    <Property Name="Role" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" />
+    <Property Name="Description" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="Schedule">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Resumption Time" Type="datetime" Nullable="false" />
+    <Property Name="Closing Time" Type="datetime" Nullable="false" />
+    <Property Name="Workdays" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="500" Nullable="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="First Name" Type="nvarchar" MaxLength="100" />
+    <Property Name="Middle Name" Type="nvarchar" MaxLength="100" />
+    <Property Name="Surname" Type="nvarchar" MaxLength="100" />
+    <Property Name="Email" Type="nvarchar" MaxLength="100" />
+    <Property Name="Password" Type="nvarchar" MaxLength="100" />
+    <Property Name="Department ID" Type="bigint" />
+    <Property Name="Group ID" Type="bigint" />
+    <Property Name="Role ID" Type="bigint" />
+    <Property Name="Unique ID" Type="nvarchar" MaxLength="100" />
+    <Property Name="Contactless Key" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="User_group">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="500" Nullable="false" />
+  </EntityType>
+  <EntityType Name="User_Picture">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="User ID" Type="bigint" Nullable="false" />
+    <Property Name="Photo" Type="varbinary(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="User_Type">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Voice_Prompt">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Prompt Title" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="File Path" Type="nvarchar" MaxLength="200" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Admin_User_Fingerprint">
+    <End Role="Fingerprint" Type="Self.Fingerprint" Multiplicity="0..1" />
+    <End Role="Admin_User" Type="Self.Admin_User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Fingerprint">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Admin_User">
+        <PropertyRef Name="Fingerprint ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Admin_User_Role">
+    <End Role="Role" Type="Self.Role" Multiplicity="0..1" />
+    <End Role="Admin_User" Type="Self.Admin_User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Admin_User">
+        <PropertyRef Name="Role ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Admin_User_User">
+    <End Role="User" Type="Self.User" Multiplicity="0..1" />
+    <End Role="Admin_User" Type="Self.Admin_User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Admin_User">
+        <PropertyRef Name="User ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Attendance_User">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="Attendance" Type="Self.Attendance" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Attendance">
+        <PropertyRef Name="User ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Department_Department">
+    <End Role="Department" Type="Self.Department" Multiplicity="1" />
+    <End Role="Department1" Type="Self.Department" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Department">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Department1">
+        <PropertyRef Name="ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Fingerprint_Finger_Definition">
+    <End Role="Finger_Definition" Type="Self.Finger_Definition" Multiplicity="1" />
+    <End Role="Fingerprint" Type="Self.Fingerprint" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Finger_Definition">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Fingerprint">
+        <PropertyRef Name="Finger ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Fingerprint_User">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="Fingerprint" Type="Self.Fingerprint" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Fingerprint">
+        <PropertyRef Name="User ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Movement_Movement_Reason">
+    <End Role="Movement_Reason" Type="Self.Movement_Reason" Multiplicity="1" />
+    <End Role="Movement" Type="Self.Movement" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Movement_Reason">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Movement">
+        <PropertyRef Name="Reason ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Movement_User">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="Movement" Type="Self.Movement" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Movement">
+        <PropertyRef Name="User ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_Department">
+    <End Role="Department" Type="Self.Department" Multiplicity="0..1" />
+    <End Role="User" Type="Self.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Department">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="Department ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_Picture_User">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="User_Picture" Type="Self.User_Picture" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="User_Picture">
+        <PropertyRef Name="User ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_Role">
+    <End Role="Role" Type="Self.Role" Multiplicity="0..1" />
+    <End Role="User" Type="Self.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="Role ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_User_group">
+    <End Role="User_group" Type="Self.User_group" Multiplicity="0..1" />
+    <End Role="User" Type="Self.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User_group">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="Group ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="STAAS_dbModelStoreContainer">
+    <EntitySet Name="Admin_User" EntityType="Self.Admin_User" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Attendance" EntityType="Self.Attendance" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Client_License" EntityType="Self.Client_License" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Customization" EntityType="Self.Customization" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DB_Configuration" EntityType="Self.DB_Configuration" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Department" EntityType="Self.Department" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Finger_Definition" EntityType="Self.Finger_Definition" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Fingerprint" EntityType="Self.Fingerprint" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Holiday" EntityType="Self.Holiday" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="License_Definition" EntityType="Self.License_Definition" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Movement" EntityType="Self.Movement" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Movement_Reason" EntityType="Self.Movement_Reason" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Register" EntityType="Self.Register" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Role" EntityType="Self.Role" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Schedule" EntityType="Self.Schedule" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User_group" EntityType="Self.User_group" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User_Picture" EntityType="Self.User_Picture" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User_Type" EntityType="Self.User_Type" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Voice_Prompt" EntityType="Self.Voice_Prompt" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Admin_User_Fingerprint" Association="Self.FK_Admin_User_Fingerprint">
+      <End Role="Fingerprint" EntitySet="Fingerprint" />
+      <End Role="Admin_User" EntitySet="Admin_User" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Admin_User_Role" Association="Self.FK_Admin_User_Role">
+      <End Role="Role" EntitySet="Role" />
+      <End Role="Admin_User" EntitySet="Admin_User" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Admin_User_User" Association="Self.FK_Admin_User_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="Admin_User" EntitySet="Admin_User" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Attendance_User" Association="Self.FK_Attendance_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="Attendance" EntitySet="Attendance" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Department_Department" Association="Self.FK_Department_Department">
+      <End Role="Department" EntitySet="Department" />
+      <End Role="Department1" EntitySet="Department" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Fingerprint_Finger_Definition" Association="Self.FK_Fingerprint_Finger_Definition">
+      <End Role="Finger_Definition" EntitySet="Finger_Definition" />
+      <End Role="Fingerprint" EntitySet="Fingerprint" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Fingerprint_User" Association="Self.FK_Fingerprint_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="Fingerprint" EntitySet="Fingerprint" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Movement_Movement_Reason" Association="Self.FK_Movement_Movement_Reason">
+      <End Role="Movement_Reason" EntitySet="Movement_Reason" />
+      <End Role="Movement" EntitySet="Movement" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Movement_User" Association="Self.FK_Movement_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="Movement" EntitySet="Movement" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_Department" Association="Self.FK_User_Department">
+      <End Role="Department" EntitySet="Department" />
+      <End Role="User" EntitySet="User" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_Picture_User" Association="Self.FK_User_Picture_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="User_Picture" EntitySet="User_Picture" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_Role" Association="Self.FK_User_Role">
+      <End Role="Role" EntitySet="Role" />
+      <End Role="User" EntitySet="User" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_User_group" Association="Self.FK_User_User_group">
+      <End Role="User_group" EntitySet="User_group" />
+      <End Role="User" EntitySet="User" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

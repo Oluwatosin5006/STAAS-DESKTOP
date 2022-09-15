@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="STAAS_dbModel_NsStoreContainer" CdmEntityContainer="STAAS_dbEntities">
+    <EntitySetMapping Name="Admin_User">
+      <EntityTypeMapping TypeName="STAAS_dbModel_Ns.Admin_User">
+        <MappingFragment StoreEntitySet="Admin_User">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Full_Name" ColumnName="Full Name" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="User_ID" ColumnName="User ID" />
+          <ScalarProperty Name="Role_ID" ColumnName="Role ID" />
+          <ScalarProperty Name="Fingerprint_ID" ColumnName="Fingerprint ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

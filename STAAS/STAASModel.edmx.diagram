@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="41928711195843038b2180c596c54588" Name="Diagram1">
+        <EntityTypeShape EntityType="STAAS_dbModel.Admin_User" Width="1.5" PointX="3" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="STAAS_dbModel.Attendance" Width="1.5" PointX="8.25" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="STAAS_dbModel.Client_License" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="STAAS_dbModel.Customization" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="STAAS_dbModel.DB_Configuration" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="STAAS_dbModel.Department" Width="1.5" PointX="3.75" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="STAAS_dbModel.Finger_Definition" Width="1.5" PointX="6" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="STAAS_dbModel.Fingerprint" Width="1.5" PointX="8.25" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="STAAS_dbModel.Holiday" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="STAAS_dbModel.License_Definition" Width="1.5" PointX="11.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="STAAS_dbModel.Movement" Width="1.5" PointX="11.25" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="STAAS_dbModel.Movement_Reason" Width="1.5" PointX="9" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="STAAS_dbModel.Register" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="STAAS_dbModel.Role" Width="1.5" PointX="0.75" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="STAAS_dbModel.Schedule" Width="1.5" PointX="0.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="STAAS_dbModel.User" Width="1.5" PointX="6" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="STAAS_dbModel.User_group" Width="1.5" PointX="3.75" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="STAAS_dbModel.User_Picture" Width="1.5" PointX="8.25" PointY="16" IsExpanded="true" />
+        <EntityTypeShape EntityType="STAAS_dbModel.User_Type" Width="1.5" PointX="11.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="STAAS_dbModel.Voice_Prompt" Width="1.5" PointX="10.75" PointY="11.75" IsExpanded="true" />
+        <AssociationConnector Association="STAAS_dbModel.FK_Admin_User_Fingerprint" ManuallyRouted="false" />
+        <AssociationConnector Association="STAAS_dbModel.FK_Admin_User_Role" ManuallyRouted="false" />
+        <AssociationConnector Association="STAAS_dbModel.FK_Admin_User_User" ManuallyRouted="false" />
+        <AssociationConnector Association="STAAS_dbModel.FK_Attendance_User" ManuallyRouted="false" />
+        <AssociationConnector Association="STAAS_dbModel.FK_Department_Department" ManuallyRouted="false" />
+        <AssociationConnector Association="STAAS_dbModel.FK_User_Department" ManuallyRouted="false" />
+        <AssociationConnector Association="STAAS_dbModel.FK_Fingerprint_Finger_Definition" ManuallyRouted="false" />
+        <AssociationConnector Association="STAAS_dbModel.FK_Fingerprint_User" ManuallyRouted="false" />
+        <AssociationConnector Association="STAAS_dbModel.FK_Movement_Movement_Reason" ManuallyRouted="false" />
+        <AssociationConnector Association="STAAS_dbModel.FK_Movement_User" ManuallyRouted="false" />
+        <AssociationConnector Association="STAAS_dbModel.FK_User_Role" ManuallyRouted="false" />
+        <AssociationConnector Association="STAAS_dbModel.FK_User_Picture_User" ManuallyRouted="false" />
+        <AssociationConnector Association="STAAS_dbModel.FK_User_User_group" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
